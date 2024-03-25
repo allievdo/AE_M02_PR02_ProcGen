@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UserInputSeed : MonoBehaviour
 {
-    public static string input;
+    public static string input = "default";
 
     public void ReadStringInput(string s)
     {

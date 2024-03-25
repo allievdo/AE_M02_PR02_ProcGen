@@ -16,7 +16,8 @@ public class RandomNumberSeed : MonoBehaviour
 
     private void Awake()
     {
-        seedString = "hello";
+        seedString = "default";
+        seed = 123456;
     }
     //private void Awake()
     //{
@@ -36,6 +37,11 @@ public class RandomNumberSeed : MonoBehaviour
 
     private void Update()
     {
+        if (UserInputSeed.input == null)
+        {
+        seedString = "default";
+        }
+
         seedString = UserInputSeed.input;
         if (useSeedString)
         {
